@@ -1,12 +1,11 @@
 $(document).ready(function(){
   console.log("DOM is ready!");
-  $("input[type='button']").on("click", setBold);
+  $("input[type='button']").on("click", displayText);
 });
 
-var setBold = function(){
-  console.log("[setBold] Function called.");
+var displayText = function(){
+  console.log("[displayText] Function called.");
   var text = getText();
-  console.log(text);
   document.getElementById("result").innerHTML = "The text you selected was " + text + "!";
 }
 
